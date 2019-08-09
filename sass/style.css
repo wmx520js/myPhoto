@@ -1,0 +1,184 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.wrap {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.wrap .top {
+  height: 1.86667rem;
+  background-image: linear-gradient(to right, #508dff, #27c4fe);
+}
+
+.wrap .con {
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.wrap .bot {
+  height: 1.6rem;
+  border-top: 1px solid #000;
+}
+
+.top {
+  display: flex;
+}
+
+.top img {
+  border-radius: 50%;
+  width: 1.33333rem;
+  height: 1.33333rem;
+  margin-top: 0.26667rem;
+  margin-left: 0.26667rem;
+}
+
+.top span {
+  font-size: 0.53333rem;
+  color: #fff;
+  margin-left: 2.93333rem;
+  margin-top: 0.26667rem;
+}
+
+.top b {
+  font-size: 0.90667rem;
+  margin-left: 3.46667rem;
+  margin-top: 0.26667rem;
+  color: #fff;
+}
+
+.con .tops {
+  border-bottom: 1px solid #000;
+  height: 1.33333rem;
+}
+
+.con .tops input {
+  background: #eee;
+  color: #fff;
+  width: 90%;
+  height: 0.8rem;
+  margin-left: 0.45333rem;
+  margin-top: 0.26667rem;
+  border-radius: 0.16rem;
+  font-size: 0.45333rem;
+}
+
+.con .data {
+  height: 1.6rem;
+  border-bottom: 1px solid #000;
+  margin-top: 0.26667rem;
+}
+
+.con .data dl {
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.con .data dl dt {
+  margin-left: 0.4rem;
+}
+
+.con .data dl dt img {
+  width: 1.33333rem;
+  height: 1.33333rem;
+  border-radius: 50%;
+}
+
+.con .data dl dd {
+  width: 50%;
+  height: 0.8rem;
+  margin-left: 0.4rem;
+}
+
+.con .data dl span {
+  margin-top: -0.53333rem;
+  margin-left: 2.13333rem;
+}
+
+.bot {
+  display: flex;
+  justify-content: space-around;
+}
+
+.bot dl {
+  margin-top: 0.26667rem;
+  text-align: center;
+}
+
+.bot dl dd i {
+  font-size: 0.64rem;
+}
+
+.data {
+  position: relative;
+}
+
+.del {
+  position: absolute;
+  right: 0px;
+  top: -0.24rem;
+  width: 5.33333rem;
+  height: 1.81333rem;
+  font-size: 0.4rem;
+  text-align: center;
+  line-height: 1.81333rem;
+  color: #fff;
+  transform: translateX(110%);
+}
+
+.del .qu {
+  width: 2.34667rem;
+  background: #ccc;
+  height: 1.81333rem;
+  display: inline-block;
+}
+
+.del .du {
+  height: 1.81333rem;
+  width: 1.86667rem;
+  background: orange;
+  display: inline-block;
+}
+
+.del .remo {
+  width: 1.06667rem;
+  height: 1.81333rem;
+  background: red;
+  display: inline-block;
+}
+
+.trans1 {
+  animation: trans1 0.5s linear forwards;
+}
+
+.trans2 {
+  animation: trans2 0.5s linear;
+}
+
+@keyframes trans1 {
+  to {
+    transform: translate(0);
+  }
+}
+
+@keyframes trans2 {
+  form {
+    transform: translate(0);
+  }
+  to {
+    transform: translate(110%);
+  }
+}

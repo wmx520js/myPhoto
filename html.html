@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./sass/style.css">
+    <link rel="stylesheet" href="./font/iconfont.css">
+    <script src="./font/iconfont.js"></script>
+    <script src="./js/flexible.js"></script>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="top">
+            <img src="./img/3ab346be499ffcb4db9395ccad8d13d0.jpg" alt="">
+            <span>消息</span>
+            <b>+</b>
+        </div>
+        <div class="con">
+            <div class="tops">
+                <input type="text" placeholder="搜索" class="ipt">
+            </div>
+            <div class="cons"></div>
+            <div class="data">
+                <dl>
+                    <dt>
+                     <img src="./img/QQ图片20190808203550.jpg" alt="">
+                    </dt>
+                    <dd style="font-size: 36px;">十一</dd>
+                    <span>你好，我现在有事不在，一会再和你联系</span>
+                </dl>
+                <div class="del">
+                    <span class="qu">取消置顶</span><span class="du">标为未读</span><span class="remo">删除</span>
+                </div>
+            </div>
+            <div class="data">
+                <dl>
+                    <dt>
+                       <img src="./img/3e92c524b6e7c9adde81d4d822329ac8.jpg" alt="">
+                        </dt>
+                    <dd style="font-size: 36px;">花粥</dd>
+                    <span>举头问苍天 何时得以赴黄泉</span>
+                </dl>
+                <div class="del">
+                    <span class="qu">取消置顶</span><span class="du">标为未读</span><span class="remo">删除</span>
+                </div>
+            </div>
+            <div class="data">
+                <dl>
+                    <dt>
+                       <img src="./img/3lw6joulowoaa8nyafk18l2gh.jpg" alt="">
+                        </dt>
+                    <dd style="font-size: 36px;">隔壁老樊</dd>
+                    <span>我曾把完整的镜子打碎 夜晚的枕头都是眼泪</span>
+                </dl>
+                <div class="del">
+                    <span class="qu">取消置顶</span><span class="du">标为未读</span><span class="remo">删除</span>
+                </div>
+            </div>
+            <div class="data">
+                <dl>
+                    <dt>
+                       <img src="./img/5a139174ede875e904caf7ebbb41be63.jpg" alt="">
+                            </dt>
+                    <dd style="font-size: 36px;">王荻</dd>
+                    <span>你是一把无情的匕首 杀光了我们的所有</span>
+                </dl>
+                <div class="del">
+                    <span class="qu">取消置顶</span><span class="du">标为未读</span><span class="remo">删除</span>
+                </div>
+            </div>
+            <div class="data">
+                <dl>
+                    <dt>
+                      <img src="./img/6de66f6caac302fdd547d86708f334c4.jpg" alt="">
+                                </dt>
+                    <dd style="font-size: 36px;">赵雷</dd>
+                    <span>她是个三十岁 身材还没有走形的女人</span>
+                </dl>
+                <div class="del">
+                    <span class="qu">取消置顶</span><span class="du">标为未读</span><span class="remo">删除</span>
+                </div>
+            </div>
+            <div class="data">
+                <dl>
+                    <dt>
+                      <img src="./img/6e972552cd85b32fdca748fd31a9cff8.jpg" alt="">
+                        </dt>
+                    <dd style="font-size: 36px;">宋冬野</dd>
+                    <span>其实你我都一样 将被遗忘 郭源潮
+                        </span>
+                </dl>
+                <div class="del">
+                    <span class="qu">取消置顶</span><span class="du">标为未读</span><span class="remo">删除</span>
+                </div>
+            </div>
+            <div class="data">
+                <dl>
+                    <dt>
+                      <img src="./img/33f96e8a1206249dc4bab55859893b4f.jpg" alt="">
+                        </dt>
+                    <dd style="font-size: 36px;">张小九</dd>
+                    <span>我拨动着吉它 唱着心里的那些话</span>
+                </dl>
+                <div class="del">
+                    <span class="qu">取消置顶</span><span class="du">标为未读</span><span class="remo">删除</span>
+                </div>
+            </div>
+            <div class="data">
+                <dl>
+                    <dt>
+                      <img src="./img/22e67d7961915bebffca1180b6381a18.jpg" alt="">
+                                    </dt>
+                    <dd style="font-size: 36px;">马良</dd>
+                    <span>你别出现在我黎明的梦里 我怕我醒来就抱不到你</span>
+                </dl>
+                <div class="del">
+                    <span class="qu">取消置顶</span><span class="du">标为未读</span><span class="remo">删除</span>
+                </div>
+            </div>
+        </div>
+        <div class="bot">
+            <dl>
+                <dd><i class="iconfont icon-gengduo"></i></dd>
+                <dt>消息</dt>
+            </dl>
+            <dl>
+                <dd><i class="iconfont icon-icon03"></i></dd>
+                <dt>联系人</dt>
+            </dl>
+            <dl>
+                <dd><i class="iconfont icon-gengduo2"></i></dd>
+                <dt>动态</dt>
+            </dl>
+        </div>
+    </div>
+    <script src="./js/tap.js"></script>
+    <script>
+        var ipt = document.querySelector('.ipt'),
+            dels = document.querySelector('.data .del'), //获取所有的del
+            qu = document.querySelectorAll('.qu'), //取消置顶
+            du = document.querySelectorAll('.du'), //标为未读
+            remo = document.querySelectorAll('.remo'); //删除
+        //模糊搜索
+
+        // console.log(dels)
+        // for (let i = 0; i < dels.length; i++) {
+        //     myTouch.tap(dels, function() {
+        //         remo.remove();
+        //     })
+        // }
+
+        // myTouch.swiper(dels, 'left', function() {
+        //     dels.classList.add('trans1');
+        //     dels.classList.remove('trans2');
+        // })
+    </script>
+</body>
+
+</html>
